@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lan="eng">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <title>CSS SELECTORS</title>
+    <style>RENT TYPE OF SELECTOR                             */
+
+/*                       DIFF/* =========================================================================== */   
+                        /* Element Selector  */
+            /* div{ */
+                /* background-color: red; */
+     
+                /* here background-color is property and red is colour */
+     /* but the drowback of this element selector is if i made another div it also give that div red background */
+     /* so to avoud this we use class selectors  }*/
+/* =========================================================================== */
+                           /*   class slector                                  */
+            /* .red{
+                background-color: red;
+             it only give red background to red class only } */
+/* ============================================================================= */ 
+  /*                        ID SELECTOR                                       */
+/*           #green{ */
+                 /* background-color: green; */
+/*        it give the green background to oly id green div} */
+/* ================================================================================    */
+/*                             CHILD SELECTOR                                         */ 
+/* #child > p{
+    color: red;
+    background-color: blue; }*/
+ 
+    /* The child selector help top give colour to paragraph  in child id and give colcour to background } */
+ /* yeh paragraph child h div ka  
+ yeh div ka andar direct para ho jab hi kam ata ha 
+ agar div ka andar dusra attribute ho like span article and aunka andar para ho
+ to yeh kam nhi ata */
+/* =================================================================================================== */
+ /*                                     DESCENDANT SELECTOR                                            */
+
+ /* #desendent p{
+    color:   red;
+    background-color: yellow;}
+
+/*  In child selector we give colour to child para of div but if in dev there is otehr span or other attribute 
+and in other  attribute there is para then child selector dont work and in this case we use 
+desendent selector it can  give the colour and backround colour to div other attributre para colour   } */
+
+/* ========================================================================================================= */
+ /*                                             UNIVERSAL SELECTOR                                          */
+
+ /* *{
+    margin: 0;
+    padding: 0;
+    }   */
+    /* It is a universal selector like sara div  ka margin or padding 0 ho gaya */
+
+/* ========================================================================================================= */
+ /*                                             PSEUDO SELECTOR                                             */
+
+
+   a:visited{
+    color: red; 
+   }
+   /* this pesu code in which when we visit an anchor link then the link colour change  */
+
+   a:link{
+    color: green;
+}
+/* when a anchor link not visited ever then the colour of link is green and then we click the link green colour remover for user  */
+
+a:active{
+    background-color: yellow;
+}
+/* This is use when ever we clink a link anchor then us time background yellow shoe hoga  */
+a:hover{
+    background-color: black;
+}
+/* jab bhi ham link anchor ka uper cursor leka jayanga jan background colour black show hoga  */
+p:first-child{
+    background-color: aqua;
+}
+/* jasa niche pesudocode name class ka div banaya ausma 2 para ha first and second yeh pesucode frst child of div 
+ /* ka colour change kar dega  */ 
+
+</style>
+</head>
+<body>
+ 
+    <div>       
+        I am a div 
+    </div>
+
+    <div class="red">
+        I am a  class red div
+    </div>
+
+    <div id="green">
+        I am a green id 
+    </div>
+
+    <div id="child">
+        <p>hi i am  a paragraph</p>
+    </div>
+
+   <div id="desendent">
+    <article>
+        <p>Hi I am desendent </p>
+    </article>
+   </div>
+
+  <div> 
+ <a href="https://www.amazon.in">go to google</a> 
+<a href="https://www.flipkart.com/">go to flipkart </a>
+</div>
+ 
+<main class="pesusocode">
+    <p>HI I AM FIRST PARA</p>
+    <p>HI I AM A SECOND PARA </p>
+</main>
+
+
+</body>
+
+
+</html>
